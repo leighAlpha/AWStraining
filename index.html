@@ -1,1 +1,21 @@
-hello world
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script>
+$(document).ready(function(){
+  $("#btn_ajax").click(function(){
+    alert("Getting all properties");
+    $.get("execute-api.ap-south-1.amazonaws.com ", function(data, status){
+    alert("Data: " + data + "\nStatus: " + status);
+  });
+  });
+});
+</script>
+</head>
+<body>
+<h1>Hello World</h1>
+  <p>
+    <button id="btn_ajax" name="btn_ajax_1">Get All Properties</button>
+  </p>
+</body>
+</html>
