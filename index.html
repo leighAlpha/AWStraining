@@ -5,7 +5,7 @@
 $(document).ready(function(){
   $("#btn_ajax").click(function(){
     alert("Getting all properties");
-    $.get("execute-api.ap-south-1.amazonaws.com ", function(data, status){
+    $.get("https://5ofwk4ocgh.execute-api.ap-south-1.amazonaws.com/connectToProptech", function(data, status){
     alert("Data: " + data + "\nStatus: " + status);
   });
   });
